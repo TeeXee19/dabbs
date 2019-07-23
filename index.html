@@ -45,16 +45,16 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" id="home_link" onclick="scrollToView('home')" >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#about">About Us</a>
+                    <a class="nav-link " onclick="scrollToView('about')">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#gallary">Gallary</a>
+                    <a class="nav-link " onclick="scrollToView('gallary')">Gallary</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#contact">Contact</a>
+                    <a class="nav-link " onclick="scrollToView('contact')">Contact</a>
                 </li>
                 
             </ul>
@@ -71,7 +71,7 @@
                 <div class="slider-content-inner">
                     <div class="container">
                          <div class="slider-content-center">
-                            <img src="assets/img/logo.png" alt="Dabb's"/>
+                            
                             <strong class="cover-xl-text">Giving Life to Your Dreams</strong>
                         </div>
                     </div>
@@ -83,8 +83,7 @@
                 <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-center">
-                            <img src="assets/img/logo.png" alt="Dabb's"/>
-                            <strong class="cover-xl-text">Giving Life to Your Dreams</strong>
+                           <strong class="cover-xl-text">Giving Life to Your Dreams</strong>
                         </div>
                     </div>
                 </div>
@@ -95,7 +94,6 @@
                 <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-center">
-                            <img src="assets/img/logo.png" alt="Dabb's"/>
                             <strong class="cover-xl-text">Giving Life to Your Dreams</strong>
                         </div>
                     </div>
@@ -118,10 +116,11 @@
     <div class="container">
         <div class="row justify-content-center" >
             <h3 >Who We Are</h3>
-            <p style="text-align: center; font-size: 20px;">We are a media consulting and event management company, with vast knowledge and expertise in Media, Marketing, Event management as well as have ground rooting in the entertainment industry. Our consulting work has spanned beyond every aspect of the media business, from developing advertising concept to managing organizations media profile, Internet business strategy, as well as creating event marketing concepts.</p> 
-           <p style="text-align: center; font-size: 20px;">Going beyond the media, our strength in strategy, marketing, communications, and the digital media sector has proffered solution to quite a number of non-profit organizations, private sector businesses, and even established cooperate entities. Due to our level of expertise, Dabb’s take out time to understand the peculiar need of its clients thereby proffering accurate and most required advice/ concept for its individual client.</p>
+            <p style="text-align: center; font-size: 15px;">We are a media consulting and event management company, with vast knowledge and expertise in Media, Marketing, Event management as well as have ground rooting in the entertainment industry. Our consulting work has spanned beyond every aspect of the media business, from developing advertising concept to managing organizations media profile, Internet business strategy, as well as creating event marketing concepts.</p> 
+           
+           <p style="text-align: center; font-size: 15px;">Going beyond the media, our strength in strategy, marketing, communications, and the digital media sector has proffered solution to quite a number of non-profit organizations, private sector businesses, and even established cooperate entities. Due to our level of expertise, Dabb’s take out time to understand the peculiar need of its clients thereby proffering accurate and most required advice/ concept for its individual client.</p>
 
-           <p style="text-align: center; font-size: 20px;">We at Dabb’s media and event are success driven. However, we maximize every inch of possibility to create an out of the world concept in order to drive our representing organizations to succeed.</p>
+           <p style="text-align: center; font-size: 15px;">We at Dabb’s media and event are success driven. However, we maximize every inch of possibility to create an out of the world concept in order to drive our representing organizations to succeed.</p>
 
 
         </div>
@@ -554,5 +553,28 @@
   gtag('config', 'UA-23581568-13');
 </script>
 
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="14d0e0c48e1a4e3f7e9af93c-|49" defer=""></script></body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="14d0e0c48e1a4e3f7e9af93c-|49" defer=""></script>
+<script type="text/javascript">
+
+    // document.getElementById('home_link').addEventListener('click', function(){
+    //     document.querySelector('#home').scrollIntoView({
+    //         behavior: 'smooth'
+    //     });
+    // });
+
+    // document.getElementById('home_link').addEventListener('click', function(){
+    //     document.querySelector('#home').scrollIntoView({
+    //         behavior: 'smooth'
+    //     });
+    // });
+
+    function scrollToView(destination) {
+        document.getElementById(destination).scrollIntoView({
+            behavior: 'smooth'
+        });
+        console.log('d:', destination)
+    }
+</script>
+
+</body>
 </html>
